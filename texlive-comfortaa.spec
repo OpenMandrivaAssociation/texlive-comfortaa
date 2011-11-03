@@ -1,3 +1,9 @@
+# revision 23707
+# category Package
+# catalog-ctan /fonts/comfortaa
+# catalog-date 2011-08-23 14:32:14 +0200
+# catalog-license lppl1.3
+# catalog-version 2.0
 Name:		texlive-comfortaa
 Version:	2.0
 Release:	1
@@ -296,6 +302,7 @@ conversions to Adobe Type 1 format.
 %doc %{_texmfdistdir}/source/fonts/comfortaa/comfortaa-fixtextcomp.mtx
 %doc %{_texmfdistdir}/source/fonts/comfortaa/comfortaa-map.tex
 %doc %{_texmfdistdir}/source/fonts/comfortaa/ttf2type1.pe
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -306,3 +313,5 @@ conversions to Adobe Type 1 format.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
