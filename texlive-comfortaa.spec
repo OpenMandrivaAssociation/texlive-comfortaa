@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 Comfortaa is a sans-serif font, comfortable in every aspect,
@@ -31,20 +28,12 @@ License version 1.1. This package provides support for this
 font in LaTeX, and includes both the TrueType fonts, and
 conversions to Adobe Type 1 format.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -303,7 +292,6 @@ conversions to Adobe Type 1 format.
 %doc %{_texmfdistdir}/source/fonts/comfortaa/comfortaa-fixtextcomp.mtx
 %doc %{_texmfdistdir}/source/fonts/comfortaa/comfortaa-map.tex
 %doc %{_texmfdistdir}/source/fonts/comfortaa/ttf2type1.pe
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -314,5 +302,3 @@ conversions to Adobe Type 1 format.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
