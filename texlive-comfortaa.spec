@@ -1,12 +1,12 @@
-# revision 23707
+# revision 24987
 # category Package
 # catalog-ctan /fonts/comfortaa
-# catalog-date 2011-08-23 14:32:14 +0200
+# catalog-date 2011-12-31 13:07:31 +0100
 # catalog-license lppl1.3
-# catalog-version 2.0
+# catalog-version 2.1
 Name:		texlive-comfortaa
-Version:	2.0
-Release:	2
+Version:	2.1
+Release:	1
 Summary:	Sans serif font, with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/comfortaa
