@@ -1,11 +1,11 @@
-# revision 25090
+# revision 27536
 # category Package
 # catalog-ctan /fonts/comfortaa
-# catalog-date 2012-01-10 07:43:57 +0100
+# catalog-date 2012-08-27 10:11:59 +0200
 # catalog-license lppl1.3
-# catalog-version 2.2
+# catalog-version 2.3
 Name:		texlive-comfortaa
-Version:	2.2
+Version:	2.3
 Release:	1
 Summary:	Sans serif font, with LaTeX support
 Group:		Publishing
@@ -302,25 +302,3 @@ conversions to Adobe Type 1 format.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.2-1
-+ Revision: 762563
-- Update to latest upstream package
-
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1-1
-+ Revision: 758837
-- Update to latest upstream release
-
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
-+ Revision: 750400
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
-+ Revision: 718106
-- texlive-comfortaa
-- texlive-comfortaa
-- texlive-comfortaa
-- texlive-comfortaa
-
