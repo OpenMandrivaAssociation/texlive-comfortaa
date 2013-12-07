@@ -6,7 +6,7 @@
 # catalog-version 2.3
 Name:		texlive-comfortaa
 Version:	2.3
-Release:	2
+Release:	3
 Summary:	Sans serif font, with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/comfortaa
