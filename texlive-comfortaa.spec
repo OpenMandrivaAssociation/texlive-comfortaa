@@ -1,6 +1,6 @@
 Name:		texlive-comfortaa
 Version:	54512
-Release:	1
+Release:	2
 Summary:	Sans serif font, with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/comfortaa
