@@ -3,7 +3,7 @@ Version:	54512
 Release:	2
 Summary:	Sans serif font, with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/comfortaa
+URL:		https://www.ctan.org/tex-archive/fonts/comfortaa
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/comfortaa.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/comfortaa.doc.r%{version}.tar.xz
